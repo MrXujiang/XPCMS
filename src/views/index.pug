@@ -1,0 +1,13 @@
+extends ./layouts/default
+
+block title
+  title Koa 首页
+
+block content
+  .container
+    h1 Hi #{name}
+    p my age is #{years}
+  include ./includes/scripts
+  script.
+    var name = 'xujiang';
+    console.log(name)
