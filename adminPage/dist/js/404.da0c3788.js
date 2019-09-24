@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["404"],{"0862":function(t,n,a){"use strict";var c=a("1af3"),e=a.n(c);e.a},"1af3":function(t,n,a){},"8cdb":function(t,n,a){"use strict";a.r(n);var c=function(){var t=this,n=t.$createElement,a=t._self._c||n;return a("div",{staticClass:"page-404"},[a("a-icon",{attrs:{type:"frown"}}),a("p",[t._v("页面未发现，"),a("router-link",{attrs:{to:"/"}},[t._v("回首页")])],1)],1)},e=[],r=(a("0862"),a("2877")),s={},i=Object(r["a"])(s,c,e,!1,null,"7fffc82c",null);n["default"]=i.exports}}]);
+//# sourceMappingURL=404.da0c3788.js.map
