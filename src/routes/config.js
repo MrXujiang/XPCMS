@@ -9,6 +9,11 @@ import {
 
 @controller('/api/v0/config')
 class configController {
+    /**
+     * 获取所有配置
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @get('/all')
     async getConfig(ctx, next) {
         const res = await getConfig()
@@ -33,6 +38,11 @@ class configController {
         }
     }
 
+    /**
+     * 设置header数据
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @post('/setHeader')
     async setHeader(ctx, next) {
         const data = ctx.request.body
@@ -52,6 +62,11 @@ class configController {
         }
     }
 
+    /**
+     * 设置banner数据
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @post('/setBanner')
     async setBanner(ctx, next) {
         const data = ctx.request.body
@@ -71,6 +86,11 @@ class configController {
         }
     }
 
+    /**
+     * 设置bannerSider
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @post('/setBannerSider')
     async setBannerSider(ctx, next) {
         const data = ctx.request.body
@@ -90,6 +110,11 @@ class configController {
         }
     }
 
+    /**
+     * 设置支持页面
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @post('/setSupportPay')
     async setSupportPay(ctx, next) {
         const data = ctx.request.body

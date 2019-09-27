@@ -5,6 +5,11 @@ import {
 
 @controller('/api/v0/siteStatistics')
 class statisticsController {
+    /**
+     * 获取所有统计数据
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @get('/all')
     async getSiteStatistics(ctx, next) {
         const res = await getSiteStatistics()

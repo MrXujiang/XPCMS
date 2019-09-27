@@ -10,7 +10,6 @@ import {
 
 @controller('/api/v0/admin')
 class adminController {
-
     /**
      * 获取所有的管理员信息
      * @param {*} ctx 

@@ -1,6 +1,9 @@
 import { HttpException } from '../lib/httpException'
 import { isDev } from '../config'
-
+/**
+ * 创建捕获异常中间件
+ * @param {*} app 
+ */
 export const catchError = app => app.use(async (ctx, next)=>{
     try {
         await next()

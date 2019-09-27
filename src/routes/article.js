@@ -13,6 +13,11 @@ import {
 
 @controller('/api/v0/article')
 class articleController {
+    /**
+     * 获取所有文章数据
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @get('/all')
     async getArticles(ctx, next) {
         let res = await getArticles()
@@ -54,6 +59,11 @@ class articleController {
         }
     }
 
+    /**
+     * 根据id文章
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @get('/:id')
     async getArticle(ctx, next) {
         let { id } = ctx.params
@@ -76,6 +86,11 @@ class articleController {
         }
     }
 
+    /**
+     * 保存文章
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @post('/saveArticle')
     async saveArticle(ctx, next) {
         let data = ctx.request.body
@@ -101,6 +116,11 @@ class articleController {
         } 
     }
 
+    /**
+     * 编辑文章
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @post('/editArticle')
     async editArticle(ctx, next) {
         let data = ctx.request.body
@@ -126,6 +146,11 @@ class articleController {
         } 
     }
 
+    /**
+     * 删除文章
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @del('/delArticle')
     async delArticle(ctx, next) {
         let { id } = ctx.query
@@ -145,6 +170,11 @@ class articleController {
         }
     }
 
+    /**
+     * 文章点赞功能
+     * @param {*} ctx 
+     * @param {*} next 
+     */
     @post('/likeArticle/:id')
     async likeArticle(ctx, next) {
         let { id } = ctx.params

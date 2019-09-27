@@ -55,7 +55,6 @@ export const editAdmin = async (query) => {
     query.role = +query.role
     let result = await adminSchema.lset(index, query)
     return result
-
 }
 
 export const delAdmin = async (name) => {
@@ -79,5 +78,15 @@ export const loginAdmin = async (query) => {
         return match ? { username, role } : null
     }else {  // 用户不存在
         return null
+    }
+}
+
+// 初始化管理员数据，目前先放在这个位置
+export const initAdmin = async (query) => {
+    let admins = await adminSchema.lrange(0, -1)
+    if(!admins || !admins.length) {
+        let hash = bcrypt.hashSync(query.pwd, 8)
+        query.pwd = hash
+        return await adminSchema.lpush(query)
     }
 }

@@ -131,10 +131,11 @@ export const editArticle = async (data) => {
     let err = await writeFile(`${articlePath}/${id}.json`, JSON.stringify({content}), "utf8")
     if(!err) {
         // 将非内容文件数据缓存到redis
-        let articleData = await articleSchema.hmget(id)
+        let articleData = await articleSchema.hget(id)
+        console.log(articleData)
         if(articleData) {
             let res = await articleSchema.hmset(id, {
-                ...JSON.parse(articleData[0]),
+                ...JSON.parse(articleData),
                 tit, 
                 label, 
                 faceUrl, 

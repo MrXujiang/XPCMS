@@ -15,7 +15,7 @@ function getIPAdress() {
 }
 
 const IP = getIPAdress();
-const staticPath = isDev ? `http://${IP}:3000` : '';
+const staticPath = isDev ? `http://${IP}:3000` : 'http://47.107.76.132:3000';
 
 
 module.exports = {
