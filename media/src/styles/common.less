@@ -1,0 +1,126 @@
+/* 初始化样式 */
+body,html{
+	margin: 0;
+	height: 100%;
+	font-family: "Helvetica Neue","Arial"
+}
+
+html {
+	// font-size: 1366/1920 *100Px;
+	// @media screen and (min-width: 1366px) {
+	// 	font-size: 1366/1920 *100Px;
+	// }
+
+	// @media screen and (min-width: 1440px) {
+	// 	font-size: 144/192 *100Px;
+	// }
+
+	// @media screen and (min-width: 1920px) {
+	// 	font-size: 100Px;
+	// }
+}
+
+body {
+	font-size: 14px;
+	background-color: #f9fafd;
+}
+
+ul {
+	padding-left: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+#root {
+	height: 100%;
+}
+
+/******** 通用布局 *********/
+
+/* 浮动 */
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.tc {
+	text-align: center;
+}
+
+/* 清除浮动 */
+.clearfix {
+    &::after, &::before {
+        content: '';
+        display: table;
+    }
+    &::after {
+        clear: both;
+        overflow: hidden;
+    }
+    zoom: 1;
+}
+
+/* 图标字体，下方案例仅供参考 */
+@font-face {font-family: "iconfont";
+	src: url('//at.alicdn.com/t/font_1296996_zf5k11wgimd.eot?t=1563258091296'); /* IE9 */
+	src: url('//at.alicdn.com/t/font_1296996_zf5k11wgimd.eot?t=1563258091296#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+	url('//at.alicdn.com/t/font_1296996_zf5k11wgimd.woff?t=1563258091296') format('woff'),
+	url('//at.alicdn.com/t/font_1296996_zf5k11wgimd.ttf?t=1563258091296') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+	url('//at.alicdn.com/t/font_1296996_zf5k11wgimd.svg?t=1563258091296#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.iconcompany:before {
+	content: "\e828";
+}
+
+.iconsend:before {
+	content: "\e829";
+}
+
+.iconfamily:before {
+	content: "\e82a";
+}
+
+.iconedu:before {
+	content: "\e82b";
+}
+
+.iconzu:before {
+	content: "\e82c";
+}
+
+.iconedit:before {
+	content: "\e82d";
+}

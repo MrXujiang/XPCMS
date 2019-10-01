@@ -1,0 +1,104 @@
+.article-wrap {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    .article {
+      flex: 1;
+      padding: 30px;
+      background-color: #fff;
+      .tit {
+        font-size: 20px;
+      }
+      .article-info {
+        line-height: 3em;
+        color: #999;
+        .article-type {
+          padding: 3px 8px;
+          border-radius: 6px;
+          line-height: 1.2;
+          color: #fff;
+          background-color: rgba(38, 129, 204, 0.5);
+        }
+        span {
+          display: inline-block;
+          margin-right: 20px;
+        }
+      }
+      .article-content {
+        margin-top: 20px;
+        iframe {
+          border: none;
+          width: 100%;
+          height: 500px;
+        }
+        img {
+          display: inline-block;
+          padding-top: 12px;
+          padding-bottom: 12px;
+        }
+      }
+      .article-ft {
+        margin-top: 20px;
+        .support-author {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          text-align: center;
+          background-color: #F2F5FB;
+          .support-wrap {
+            margin-top: 20px;
+            .btn-flover {
+              margin-left: 20px;
+            }
+            .like-animation {
+              font-size: 30px;
+              color: red;
+              position: absolute;
+              z-index: -1;
+              margin-left: -45px;
+              animation: like 2s ease-out;
+            }
+            @keyframes like {
+              0% {
+                transform: translateY(0);
+                opacity: 1;
+                z-index: 1;
+              }
+              100% {
+                transform: translateY(-100px);
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sider-bar {
+      margin-left: 20px;
+      align-self: end;  /* 防止子元素被拉伸 */
+      width: 320px;
+      padding: 16px;
+      background-color: #fff;
+      h2 {
+        text-align: center;
+        }
+      .sider-item {
+          width: 100%;
+          p {
+              text-align: center;
+          }
+          img {
+              width: 100%;
+          }
+      }
+    }
+  }
+  .img-wrap {
+    text-align: center;
+    img {
+      width: 90%;
+    }
+    p{
+      padding-top: 12px;
+      font-weight: bold;
+    }
+  }

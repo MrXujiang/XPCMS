@@ -1,0 +1,24 @@
+{
+    "presets": [
+        ["env", { "modules": false }],
+        "react"
+    ],
+    "plugins": [
+        "react-hot-loader/babel",
+        ["import", {
+            "libraryName": "antd",
+            "style": true
+        }],
+        ["transform-class-properties", { "spec": true }],
+        ["transform-object-rest-spread"],
+        [
+            "transform-runtime",
+            {
+              "helpers": false,
+              "polyfill": false,
+              "regenerator": true,
+              "moduleName": "babel-runtime"
+            }
+        ]
+    ]
+}

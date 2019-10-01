@@ -1,0 +1,90 @@
+.home-wrap {
+    margin: 16px 60px;
+    .banner-wrap {
+        .banner {
+            position: relative;
+            margin-right: 220px;
+            &.mobile {
+               margin-right: 0; 
+            }
+            .banner-label {
+                position: absolute;
+                bottom: 20px;
+                display: inline-block;
+                padding: 3px 6px;
+                margin-right: 20px;
+                border-radius: 6px;
+                background-color: rgba(0,0,0, .2);
+            }
+        }
+        .banner-img {
+                position: relative;
+                display: block;
+                height: 260px;
+                background-position: center center;
+                background-size: 100%;
+                text-decoration: none;
+                color: #fff;
+                text-align: center;
+                background-repeat: no-repeat;
+                .tit {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 30px;
+                    padding: 4px 10px;
+                    color: #fff;
+                    font-size: 24px;
+                }
+            }
+        .ant-carousel > .slick-slide {
+            text-align: center;
+            height: 160px;
+            line-height: 160px;
+            background: #364d79;
+            overflow: hidden;
+        }
+
+        .ant-carousel > .slick-slide h3 {
+            color: #fff;
+        }
+
+        .banner-sider {
+            float: right;
+            width: 200px;
+            min-height: 260px;
+            padding: 20px;
+            background-color: #fff;
+            .tit {
+                padding-bottom: 10px;
+            }
+            img {
+                width: 100%;
+            }
+            .tit {
+                line-height: 2em;
+            }
+        }
+    }
+
+    .article-list {
+        margin-top: 10px;
+        .tit {
+            position: relative;
+            font-size: 20px;
+            text-align: center;
+            line-height: 3em;
+            &::before, &::after {
+                content: '- - -';
+                display: inline-block;
+                color: rgb(230, 227, 227);
+            }
+            &::before {
+                margin-right: 10px;
+            }
+            &::after {
+                margin-left: 10px;
+            }
+        }
+    }
+    
+}
