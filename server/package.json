@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@koa/multer": "^2.0.0",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "glob": "^7.1.4",
     "ioredis": "^4.14.0",
     "jsonschema": "^1.2.4",
