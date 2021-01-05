@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.18.2",
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "console-polyfill": "^0.3.0",
     "immutable": "^4.0.0-rc.12",
